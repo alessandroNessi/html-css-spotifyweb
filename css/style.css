@@ -142,15 +142,7 @@ nav ul{
 nav ul li a{
     padding: 5px;
 }
-nav ul a:hover::after{
-    content: "";
-    background-color: #adff2f;
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    bottom: -2px;
-    left: calc(50% - 15px);
-}
+
 /* ////NAV */
 /* BANNER */
 #upgrade-banner{
@@ -192,9 +184,8 @@ main section .album__item .title{
     padding: 15px 0;
     font-size: 14px;
 }
-main #popular .album__item--image{
+main #popular .album__item--image--container{
     border-radius: 50%;
-    overflow: hidden;
 }
 /* XS */
 main section .album__list>*{
@@ -213,9 +204,14 @@ main section .album__list .album__item{
     justify-content: space-between;
     align-items: center;
 }
-
+main section .album__list .album__item--image--container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 main section .album__list .album__item--image{
     width: 100%;
+    display: block;
 }
 /* ////MAIN */
 /* FOOTER */
@@ -262,7 +258,7 @@ footer .row__player--top i{
 footer .middle .row a>*, footer .right a>*{
     color: white;
 }
-footer .row__player--play{
+footer .row__player--play>i{
     font-size: 35px;
 }
 footer .middle .row__player--bottom .row{
@@ -273,6 +269,17 @@ footer .middle .row__player--bottom .row{
     height: 4px;
     border-radius: 2px;
     background-color: #a3a3a3;
+    position: relative;
+}
+.progressbar .dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    top: -3px;
+    left: calc(25% - 5px);
+    visibility: hidden;
 }
 .progressbar--time{
     width: calc(100% - 100px);
@@ -357,6 +364,64 @@ footer .middle .row__player--bottom .row{
 #upgrade-banner button:hover{
     transform: scale(1.2);
 }
-header a>*:hover{
+header .playlist__new:hover div{
+    background-color: white;
+    color: black;
+}
+header .playlist__new:hover span{
     color: white;
+}
+header a>*:hover, header a:hover{
+    color: white;
+}
+nav ul a:hover::after{
+    content: "";
+    background-color: #adff2f;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: -2px;
+    left: calc(50% - 15px);
+}
+nav ul a:hover{
+    color: white;
+}
+footer .row__player--play:hover{
+    transform: scale(1.2);
+}
+footer .subtitle:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer .progressbar:hover::after{
+    background-color: #adff2f;
+}
+footer .progressbar:hover .dot{
+    visibility: visible;
+}
+footer .left i:hover{
+    color: white;
+}
+main .album__item--image--container:hover::before{
+    content:"\f144";
+    font-family: "Font Awesome 5 Free";
+    font-size: 50px;
+    font-weight: 400;
+    display: block;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+main .album__item--image--container:hover::after{
+    content:"";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
