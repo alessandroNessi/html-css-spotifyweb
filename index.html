@@ -32,36 +32,38 @@
                     <ul>
                         <li>
                             <a class="flex" href="#">
-                                <i class="fas fa-home header__favicon--xs color-white"></i><span class="color-white header__display--md">Home</span>
+                                <img class="header__icon--xs" src="img/home.svg" alt="home icon">
+                                <span class="color-white header__display--md">Home</span>
                             </a>
                         </li>
                         <li>
                             <a class="flex" href="#">
-                                <i class="fas fa-search header__favicon--xs"></i><span class="header__display--md">Cerca</span>
+                                <img class="header__icon--xs" src="img/search.svg" alt=""></i><span class="header__display--md">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a class="flex" href="#">
-                                <i class="fas fa-book header__favicon--xs"></i><span class="header__display--md">La tua libreria</span>
+                                <img class="header__icon--xs" src="img/libreria.svg" alt=""><span class="header__display--md">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="ul2 header__display--md">
-                    <h3 class="color-white">PLAYLIST</h3>
-                    <ul>
-                        <li>
-                            <a class="flex" href="#">
-                                <i class="fas fa-plus-square"></i><span>Crea Playlist</span></li>
-                            </a>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                    </ul>
+                <h3 class="color-white">PLAYLIST</h3>
+                <div class="header__display--md">
+                    <a class="flex" href="#">
+                        <div class="background-color--std header__icon--xs header__icon--playlist flex">+</div><span>Crea Playlist</span></li>
+                    </a>
+                    <div class="ul2">
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="nav-footer">
                     <ul class="flex">
@@ -72,7 +74,7 @@
                         </li>
                         <li>
                             <a class="flex" href="#">
-                                <i class="color-white far fa-user-circle header__favicon--xs"></i><span class="color-white header__display--md">John Doe</span>
+                                <img class="background-color--std header__icon--xs header__icon--round" src="img/profile.svg" alt=""></i><span class="color-white header__display--md">John Doe</span>
                             </a>
                         </li>
                     </ul>
@@ -117,7 +119,14 @@
                 </div>
             </div>
             <div class="middle"></div>
-            <div class="right"></div>
+            <div class="right flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="progressbar progressbar--audio">
+
+                </div>
+            </div>
         </footer>
         <!-- ////FOOTER -->
     </body>
