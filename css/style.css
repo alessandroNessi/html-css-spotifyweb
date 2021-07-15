@@ -127,6 +127,7 @@ header .overflow{
 header .ul2{
     padding-top: 10px;
     overflow-y: auto;
+    height: calc(100vh - 510px); /*510px it's an height that comprehend the sums of all the page elements*/
 }
 header .nav-footer ul{
     flex-direction: column;
