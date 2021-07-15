@@ -167,8 +167,10 @@ nav ul a:hover::after{
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px 30px;
-    margin-right: 5px;
+    margin-right: 30px;
     background-color: transparent;
+    cursor: pointer;
+    transition: transform 200ms;
 }
 /* ////BANNER */
 /* MAIN */
@@ -217,6 +219,9 @@ main section .album__list .album__item--image{
 }
 /* ////MAIN */
 /* FOOTER */
+footer i{
+    font-size: 16px;
+}
 footer{
     height: 80px;
     justify-content: space-between;
@@ -232,7 +237,7 @@ footer .left div>*{
     align-self: center;
     padding: 5px;
 }
-footer .left a{
+footer .left .album__item a{
     font-size: 10px;
 }
 footer .left img{
@@ -254,13 +259,13 @@ footer .middle .row{
 footer .row__player--top i{
     padding: 10px;
 }
-footer .middle .row>*{
+footer .middle .row a>*, footer .right a>*{
     color: white;
 }
 footer .row__player--play{
-    font-size: 30px;
+    font-size: 35px;
 }
-footer .middle .row.row__player--bottom{
+footer .middle .row__player--bottom .row{
     justify-content: space-between;
 }
 .progressbar{
@@ -271,6 +276,9 @@ footer .middle .row.row__player--bottom{
 }
 .progressbar--time{
     width: calc(100% - 100px);
+}
+.progressbar--volume{
+    display: none;
 }
 .progressbar::after{
     content: "";
@@ -320,6 +328,9 @@ footer .middle .row.row__player--bottom{
     .album__list li:nth-of-type(4n) {
         margin-right: 0px;
     }
+    footer .right .progressbar--volume{
+        display: block;
+    }
     /* ////MAIN ITEMS RESPONSIVE */
 }
 @media screen and (min-width:1100px){
@@ -338,4 +349,14 @@ footer .middle .row.row__player--bottom{
     .album__list li:nth-of-type(6n) {
         margin-right: 0px;
     }
+    footer .right .progressbar--volume{
+        display: block;
+    }
+}
+/*HOOVER EFFECTS*/
+#upgrade-banner button:hover{
+    transform: scale(1.2);
+}
+header a>*:hover{
+    color: white;
 }

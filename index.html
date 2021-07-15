@@ -38,7 +38,7 @@
                         </li>
                         <li>
                             <a class="flex" href="#">
-                                <img class="header__icon--xs" src="img/search.svg" alt=""></i><span class="header__display--md">Cerca</span>
+                                <img class="header__icon--xs" src="img/search.svg" alt=""><span class="header__display--md">Cerca</span>
                             </a>
                         </li>
                         <li>
@@ -51,7 +51,7 @@
                 <div class="header__display--md">
                     <h3 class="color-white">PLAYLIST</h3>
                     <a class="flex" href="#">
-                        <div class="background-color--std header__icon--xs header__icon--playlist flex">+</div><span>Crea Playlist</span></li>
+                        <div class="background-color--std header__icon--xs header__icon--playlist flex">+</div><span>Crea Playlist</span>
                     </a>
                     <div class="ul2">
                         <ul>
@@ -74,7 +74,7 @@
                         </li>
                         <li>
                             <a class="flex" href="#">
-                                <img class="background-color--std header__icon--xs header__icon--round" src="img/profile.svg" alt=""></i><span class="color-white header__display--md">John Doe</span>
+                                <img class="background-color--std header__icon--xs header__icon--round" src="img/profile.svg" alt=""><span class="color-white header__display--md">John Doe</span>
                             </a>
                         </li>
                     </ul>
@@ -199,7 +199,7 @@
         <!-- FOOTER -->
         <footer class="flex">
             <div class="left flex space-between">
-                <div class="flex">
+                <div class="flex album__item">
                     <img src="img/sinister.jpeg" alt="sinister small icon playing">
                     <a class="inline-block" href="#">
                         <h4 class="title">Sinister</h4>
@@ -207,33 +207,55 @@
                     </a>
                 </div>
                 <div>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-folder"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="middle flex">
                 <div class=" row flex row__player--top">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="row__player--play far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
+                    <a href="#">
+                        <i class="fas fa-random"></i>
+                    </a>
+                    <a href="#">
+                    <i class="fas fa-step-backward"></i>                      
+                    </a>
+                    <a href="#">
+                    <i class="row__player--play far fa-play-circle"></i>                       
+                    </a>
+                    <a href="#">
+                    <i class="fas fa-step-forward"></i>                       
+                    </a>
+                    <a href="#">
+                    <i class="fas fa-redo-alt"></i>                        
+                    </a>
                 </div>
-                <div class=" row flex row__player--bottom">
-                    <p>0:25</p>
-                    <div class="progressbar progressbar--time"></div>
-                    <p>4:35</p>
-                </div>
+                <a class="row__player--bottom" href="#">
+                    <div class=" row flex">
+                        <p>0:25</p>
+                        <div class="progressbar progressbar--time"></div>
+                        <p>4:35</p>
+                    </div> 
+                </a>
             </div>
 
             <div class="right flex">
-                <i class="fas fa-list-ul"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="progressbar">
-
-                </div>
+                <a href="#">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-desktop"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-volume-up"></i>                  
+                </a>
+                <a href="#">
+                    <div class="progressbar progressbar--volume"></div>
+                </a>                
             </div>
         </footer>
         <!-- ////FOOTER -->
