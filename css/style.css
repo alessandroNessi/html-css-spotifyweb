@@ -137,10 +137,23 @@ header .nav-footer ul{
 }
 /* ////HEADER */
 /* NAV */
-nav{
+nav ul{
     height: 80px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    padding: 5px;
+}
+nav ul a:hover::after{
+    content: "";
+    background-color: #adff2f;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: -2px;
+    left: calc(50% - 15px);
 }
 /* ////NAV */
 /* MAIN */
@@ -234,10 +247,6 @@ footer .middle .row.row__player--bottom{
     border-radius: 2px;
     background-color: white;
 }
-/* footer>*, header>*, nav>*{
-    height: 50px;
-    width: 100px;
-} */
 /* ////FOOTER */
 /*RESPONSIVE CHANGES*/
 @media screen and (min-width: 600px) {
