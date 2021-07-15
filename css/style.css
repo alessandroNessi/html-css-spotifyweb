@@ -98,6 +98,9 @@ header>*{
 header .nav-footer{
     margin-top: auto;
 }
+.nav-footer li>a{
+    padding:10px 0;
+}
 .header__icon--xs{
     width: 30px;
     height: 30px;
@@ -124,7 +127,7 @@ header h3{
 header .ul2{
     padding-top: 10px;
     overflow: auto;
-    height: calc(100vh - 510px); /*510px it's an height that comprehend the sums of all the page elements*/
+    height: calc(100vh - 535px); /*535px it's an height that comprehend the sums of all the page elements*/
 }
 header .nav-footer ul{
     flex-direction: column;
@@ -313,7 +316,8 @@ footer .middle .row__player--bottom .row{
         padding: 15px;
     }
     .header__border--bottom--md{
-        border-bottom: 1px solid #a3a3a3;;
+        border-bottom: 1px solid #a3a3a3;
+        width: 100%;
     }
     .header__footer--align--md{
         align-self: flex-start;
