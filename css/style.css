@@ -11,6 +11,7 @@
 }
 body .container{
     height: calc( 100vh - 80px);
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -222,7 +223,7 @@ footer{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     background-color: #282828;
 }
 footer .left, footer .right{
@@ -253,7 +254,7 @@ footer .middle .row{
     align-items: center;
 }
 footer .row__player--top i{
-    padding: 10px;
+    padding: 5px 10px;
 }
 footer .middle .row a>*, footer .right a>*{
     color: white;
