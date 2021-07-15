@@ -197,10 +197,34 @@ footer .right{
     justify-content: space-between;
     padding-right: 5px;
 }
+footer .middle{
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 500px;
+}
+footer .middle .row{
+    justify-content: center;
+    align-items: center;
+}
+footer .row__player--top i{
+    padding: 10px;
+}
+footer .middle .row>*{
+    color: white;
+}
+footer .row__player--play{
+    font-size: 30px;
+}
+footer .middle .row.row__player--bottom{
+    justify-content: space-between;
+}
 .progressbar{
     width: 100px;
     height: 4px;
     border-radius: 2px;
+}
+.progressbar--time{
+    width: calc(100% - 100px);
 }
 .progressbar::after{
     content: "";
