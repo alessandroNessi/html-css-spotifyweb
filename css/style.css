@@ -44,10 +44,19 @@ li{
 .fixed{
     position: fixed;
 }
-/* .debug{
-    background-color: coral;
-    border: 1px solid blue;
-} */
+/*SCROLLBAR PERSONALIZATION*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*SCROLLBAR PERSONALIZATION*/
 /* ////GENERAL */
 /* TYPO */
 body{
@@ -303,6 +312,9 @@ footer .middle .row__player--bottom .row{
 /*RESPONSIVE CHANGES*/
 @media screen and (min-width: 600px) {
     /* HEADER RESPONSIVE */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
     .header__width--md{
         width: 240px;
     }
@@ -346,6 +358,9 @@ footer .middle .row__player--bottom .row{
     /* ////MAIN ITEMS RESPONSIVE */
 }
 @media screen and (min-width:1100px){
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
     main section .album__list>*{
         width: calc((100% - 50px)/6);
     }
