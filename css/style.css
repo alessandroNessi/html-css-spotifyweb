@@ -25,8 +25,8 @@ li{
 .flex{
     display: flex;
 }
-.space-between{
-    justify-content: space-between;
+.wrap{
+    flex-wrap: wrap;
 }
 .block{
     display: block;
@@ -94,10 +94,6 @@ header>*{
 header .nav-footer{
     margin-top: auto;
 }
-/* .header__favicon--xs{
-    font-size: 30px;
-} */
-
 .header__icon--xs{
     width: 30px;
     height: 30px;
@@ -156,7 +152,7 @@ nav ul a:hover::after{
     left: calc(50% - 15px);
 }
 /* ////NAV */
-/* MAIN */
+/* BANNER */
 #upgrade-banner{
     width: calc(100% - 50px);
     flex-shrink: 0;
@@ -173,6 +169,8 @@ nav ul a:hover::after{
     padding: 5px 20px;
     margin-right: 5px;
 }
+/* ////BANNER */
+/* MAIN */
 main{
     padding-top: 80px;
     width: 100%;
@@ -180,8 +178,34 @@ main{
     overflow-y: scroll;
     background-color: #141922;
 }
-main section{
-    height: 400px;
+main section, main section>*{
+    padding: 10px;
+}
+main section .album__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* XS */
+main section .album__list>*{
+    width: calc((100% - 10px)/2);
+}
+/*margin responsive*/
+.album__list li{
+    margin-right: 10px;
+}
+.album__list li:nth-of-type(2n) {
+    margin-right: 0px;
+}
+main section .album__list .album__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section .album__list .album__item--image{
+    width: 100%;
 }
 /* ////MAIN */
 /* FOOTER */
@@ -275,4 +299,34 @@ footer .middle .row.row__player--bottom{
         width: calc(100% - 240px);
     }
     /*////BANNER RESPONSIVE*/
+    /*MAIN ITEMS RESPONSIVE*/
+    /* XS OFF */
+    main section .album__list>*{
+        width: calc((100% - 30px)/4);
+    }
+    .album__list li:nth-of-type(2n) {
+        margin-right: 10px;
+    }
+    /* MD */
+    .album__list li:nth-of-type(4n) {
+        margin-right: 0px;
+    }
+    /* ////MAIN ITEMS RESPONSIVE */
+}
+@media screen and (min-width:1100px){
+    main section .album__list>*{
+        width: calc((100% - 50px)/6);
+    }
+    /* XS OFF*/
+    .album__list li:nth-of-type(2n) {
+        margin-right: 10px;
+    }
+    /* MD OFF */
+    .album__list li:nth-of-type(4n) {
+        margin-right: 10px;
+    }
+    /* XL */
+    .album__list li:nth-of-type(6n) {
+        margin-right: 0px;
+    }
 }
