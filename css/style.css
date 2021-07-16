@@ -115,6 +115,19 @@ header .nav-footer{
     width: 30px;
     height: 30px;
 }
+header .ul1 li{
+    position: relative;
+}
+header .ul1 li:hover::after{
+    content: "";
+    display: block;
+    background-color: #adff2f;
+    position: absolute;
+    height: 30px;
+    width: 4px;
+    left: -10px;
+    top: 5px;
+}
 .header__icon--playlist{
     justify-content: center;
     align-items: center;
@@ -304,6 +317,9 @@ footer .middle .row__player--bottom .row{
     /* HEADER RESPONSIVE */
     ::-webkit-scrollbar {
         width: 7px;
+    }
+    header .ul1 li:hover::after{
+        left: -15px;
     }
     .header__width--md{
         width: 240px;
