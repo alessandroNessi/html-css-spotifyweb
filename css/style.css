@@ -108,7 +108,8 @@ header .nav-footer{
     margin-top: auto;
 }
 .nav-footer li>a{
-    padding:10px 0;
+    padding:10px 0 0 0;
+    align-items: center;
 }
 .header__icon--xs{
     width: 30px;
@@ -133,10 +134,9 @@ header span{
 header h3{
     padding-bottom: 10px;
 }
-header .ul2{
-    padding-top: 10px;
-    overflow: auto;
-    height: calc(100vh - 535px); /*535px it's an height that comprehend the sums of all the page elements*/
+.header__list--scroll{
+    flex-grow: 1;
+    overflow-y: scroll;
 }
 header .nav-footer ul{
     flex-direction: column;
@@ -284,16 +284,6 @@ footer .middle .row__player--bottom .row{
     background-color: #a3a3a3;
     position: relative;
 }
-.progressbar .dot{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: white;
-    top: -3px;
-    left: calc(25% - 5px);
-    visibility: hidden;
-}
 .progressbar--time{
     width: calc(100% - 100px);
 }
@@ -333,6 +323,9 @@ footer .middle .row__player--bottom .row{
     }
     .header__footer--align--md{
         align-self: flex-start;
+    }
+    .header__list--scroll{
+        padding-top: 0px;
     }
     /*////HEADER RESPONSIVE*/
     /*BANNER RESPONSIVE*/
@@ -396,6 +389,7 @@ header a>*:hover, header a:hover{
 }
 nav ul a:hover::after{
     content: "";
+    display: block;
     background-color: #adff2f;
     position: absolute;
     width: 30px;
@@ -416,8 +410,16 @@ footer .subtitle:hover{
 footer .progressbar:hover::after{
     background-color: #adff2f;
 }
-footer .progressbar:hover .dot{
-    visibility: visible;
+footer .progressbar:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    top: -3px;
+    left: calc(25% - 5px);
 }
 footer .left i:hover{
     color: white;
