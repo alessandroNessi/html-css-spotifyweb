@@ -118,9 +118,6 @@ header .nav-footer{
 header .ul1 li{
     position: relative;
 }
-header li a{
-    justify-content: center;
-}
 header .ul1 li:hover::after{
     content: "";
     display: block;
@@ -156,6 +153,10 @@ header h3{
 }
 header .nav-footer ul{
     flex-direction: column;
+}
+/* XS icon centering */
+header li a{
+    justify-content: center;
 }
 .header__footer--align--xs{
     align-self: center;
