@@ -118,6 +118,9 @@ header .nav-footer{
 header .ul1 li{
     position: relative;
 }
+header li a{
+    justify-content: center;
+}
 header .ul1 li:hover::after{
     content: "";
     display: block;
@@ -320,6 +323,9 @@ footer .middle .row__player--bottom .row{
     ::-webkit-scrollbar {
         width: 7px;
     }
+    header li a{
+        justify-content: flex-start;
+    }
     header .ul1 li:hover::after{
         left: -15px;
     }
@@ -392,6 +398,9 @@ footer .middle .row__player--bottom .row{
     }
     footer .right .progressbar--volume{
         display: block;
+    }
+    main section .album__list .album__item{
+        max-width: 220px;
     }
 }
 /*HOOVER EFFECTS*/
