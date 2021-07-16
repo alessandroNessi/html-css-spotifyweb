@@ -303,13 +303,15 @@ footer .middle .row__player--bottom .row{
 .progressbar--volume{
     display: none;
 }
-.progressbar::after{
+.progressbar::before{
     content: "";
     display: block;
     height: 4px;
     width: 25%;
     border-radius: 2px;
     background-color: white;
+    transition: width 2s;
+    position: relative;
 }
 /* ////FOOTER */
 /*RESPONSIVE CHANGES*/
@@ -426,10 +428,11 @@ footer .subtitle:hover{
     color: white;
     text-decoration: underline;
 }
-footer .progressbar:hover::after{
-    background-color: #adff2f;
-}
 footer .progressbar:hover::before{
+    background-color: #adff2f;
+    width: 100%;
+}
+footer .progressbar::after{
     content: "";
     display: block;
     position: absolute;
@@ -439,6 +442,12 @@ footer .progressbar:hover::before{
     background-color: white;
     top: -3px;
     left: calc(25% - 5px);
+    transition: left 2s;
+    visibility: hidden;
+}
+footer .progressbar:hover::after{
+    left: calc(100% - 5px);
+    visibility: visible;
 }
 footer .left i:hover{
     color: white;
