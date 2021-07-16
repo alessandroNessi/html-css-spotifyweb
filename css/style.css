@@ -317,6 +317,9 @@ footer .middle .row__player--bottom .row{
     .header__padding--md>*{
         padding: 15px;
     }
+    .header__list--scroll{
+        padding: 0 15px;
+    }
     .header__border--bottom--md{
         border-bottom: 1px solid #a3a3a3;
         width: 100%;
